@@ -1,0 +1,18 @@
+<h1>Resource List</h1>
+<div class="List">
+<div class="topnav">
+  <a  routerLinkActive='active'(click)=mobile()>MobilesList</a>
+  <a  routerLinkActive='active'(click)=laptop()>LaptopList</a>
+ </div> 
+<table> 
+    <tr>
+     <th>Resource_Id</th>
+     <th>Resource_Name</th> 
+    </tr>
+     <tr *ngFor="let resource of ResourceData">
+     <td  (click)="onclick(resource.Resource_Id)"> {{resource.Resource_Id}}</td>
+     <td>{{resource.Resource_Name}}</td> 
+     </tr>
+   </table>
+  </div>
+

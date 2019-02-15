@@ -1,0 +1,44 @@
+.available {
+    padding-top: 100px;
+     width: 500px;
+     margin: 20px auto;
+     font-size: 16px;
+      padding: 30px; 
+   } 
+   h1 {
+    text-align:center;
+    padding: 20px;
+    color: blue;
+}
+   h4 {
+    color:red
+  }
+   .available-header {
+    background: green;
+    padding: 10px;
+    font-size: large;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+  }
+   .available input[type="submit"] {
+    background: cornflowerblue;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+   
+  .available input[type="submit"]:hover {
+    background: cadetblue;
+  }
+  
+  .available input[type="submit"]:focus {
+    border-color: #05a;
+  }
+  .available-container {
+    background: #ebebeb;
+    padding: 12px;
+  }
+  .log{
+    text-align: center;
+  }

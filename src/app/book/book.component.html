@@ -1,0 +1,14 @@
+ <h1>Book the Resource</h1>
+ <div class="bookresource">
+ <h2 class="bookresource-header">Book Resource</h2>
+<form [formGroup] = "book"  class="bookresource-container" (ngSubmit)="bookdetails(book.value)">
+    <label for="Start_Date" >Start_Date:</label> 
+    <input type="date" name="Start_Date" formControlName="Start_Date">
+    <br><br>
+    <label for="End_Date">End_Date:</label>
+    <input type="date" name="End_Date" formControlName="End_Date">
+    <br><br>
+    <p> <input  type="submit" value="Book"></p>
+    <div class="log" *ngIf="bookingStatus"><h3>Resource Booked Successfully</h3></div>
+</form> 
+</div>

@@ -1,0 +1,14 @@
+<h1>Status of the Resource</h1>
+<div class="available">
+    <h2 class="available-header">check status</h2>
+  <form [formGroup] = "form"  class="available-container" (ngSubmit) = "postdetails(form.value)">
+      <label for="Start_Date">Start_Date:</label>
+      <input type="date" name="Start_Date"formControlName="Start_Date">
+      <br><br>
+      <label for="End_Date">End_Date:</label>
+      <input type="date"  name="End_Date"   formControlName="End_Date">
+      <br><br>
+     <p> <input  type="submit" value="Check for Availability"></p>
+      <div class="log" *ngIf="availability"><h4>Resource not Available</h4></div>
+  </form>
+ </div> 
